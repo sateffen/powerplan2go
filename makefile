@@ -1,7 +1,7 @@
 
 .PHONY: clean
 clean:
-	rm -r dist/*
+	rm -r dist/* || exit 0
 
 .PHONY: build
 build: clean
